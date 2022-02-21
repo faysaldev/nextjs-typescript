@@ -18,7 +18,7 @@ function TopSingleItem({ name, image, dropdown }) {
           </p>
           {showDropDown && (
             <div
-              className={`absolute space-y-1 hidden w-[250px] bg-[#252526] top-6 text-white font-semibold rounded-md max-w-[300px] ${
+              className={`absolute z-100 space-y-1 hidden w-[250px] bg-[#1b1b1c] top-4 left-0 text-white font-semibold rounded-md max-w-[300px] ${
                 showDropDown ? "hidden group-hover:block" : "hidden"
               }`}
             >
@@ -27,7 +27,7 @@ function TopSingleItem({ name, image, dropdown }) {
                   <>
                     <li
                       key={item.id}
-                      className="list-none cursor-context-menu flex items-center justify-between px-3 py-2  hover:bg-gray-700 transition-all ease-in-out"
+                      className="list-none cursor-context-menu flex items-center justify-between px-3 py-2  hover:bg-gray-700 transition-all ease-in-out z-100"
                     >
                       <p>{item.dropname}</p> <span>{item.shorcut}</span>
                     </li>

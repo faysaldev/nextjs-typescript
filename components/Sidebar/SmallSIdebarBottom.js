@@ -6,7 +6,7 @@ function SmallSIdebarBottom() {
   const [BoomtShow, setBottomShow] = useState("");
 
   return (
-    <div className="px-3 flex flex-col space-y-3 text-gray-700">
+    <div className="px-3 flex flex-col space-y-3 text-gray-700 mb-[47px]">
       {/* TODO: avatar Icon */}
       <div className="hover:text-gray-200 cursor-pointer relative group transition-all ease-in">
         <AccountCircleIcon

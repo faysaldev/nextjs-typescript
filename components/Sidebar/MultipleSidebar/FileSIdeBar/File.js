@@ -5,7 +5,7 @@ function File({ Icon, text, iconColor, image }) {
   const shortname = text.length > 10 ? text.substring(0, 10) : text;
 
   return (
-    <div className="flex items-center pt-1 group">
+    <div className="flex items-center pt-1 group py-1 px-1 hover:bg-gray-900 rounded">
       {Icon && <Icon className={`h-4 ${iconColor}`} />}
       {image && (
         <Image

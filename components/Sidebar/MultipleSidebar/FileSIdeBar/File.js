@@ -1,11 +1,22 @@
 import React from "react";
 import Image from "next/image";
+import { useDispatch } from "react-redux";
+import { addNav } from "../../../../slice/appSlice";
 
-function File({ Icon, text, iconColor, image }) {
+function File({ Icon, text, iconColor, image, page, allFuilds }) {
   const shortname = text.length > 10 ? text.substring(0, 10) : text;
 
+  const dispatch = useDispatch();
+
+  const SelectPageHandler = () => {
+    dispatch(addNav(allFuilds));
+  };
+
   return (
-    <div className="flex items-center pt-1 group py-1 px-1 hover:bg-gray-900 rounded">
+    <div
+      className="flex items-center pt-1 group py-1 px-1 hover:bg-gray-900 rounded"
+      onClick={page && SelectPageHandler}
+    >
       {Icon && <Icon className={`h-4 ${iconColor}`} />}
       {image && (
         <Image

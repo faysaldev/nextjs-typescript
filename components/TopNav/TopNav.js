@@ -2,8 +2,11 @@ import React from "react";
 import TopRight from "./TopRight";
 import TopSingleItem from "./TopSingleItem";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
-
+import { setlectCurrentFile } from "../../slice/appSlice";
+import { useSelector } from "react-redux";
 function TopNav() {
+  const currentTab = useSelector(setlectCurrentFile);
+
   const FIleDropDown = [
     {
       id: 1,
@@ -59,7 +62,8 @@ function TopNav() {
       {/* TODO: About Product Content */}
       <div className="flex items-center space-x-2 text-white text-xs md:text-sm font-semibold">
         {/* TODO: dot icon */}
-        <FiberManualRecordIcon className="px-2" /> - <p>TopNav.js</p> -{" "}
+        <FiberManualRecordIcon className="px-2" /> -{" "}
+        <p>{currentTab?.name ? currentTab?.name : "Faysal Mridha"}</p> -{" "}
         <p>app</p> -<p>Visual Studio Code</p>
       </div>
 

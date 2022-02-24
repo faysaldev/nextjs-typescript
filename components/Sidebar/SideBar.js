@@ -22,7 +22,7 @@ function SideBar() {
         smalSidebarValue={smalSidebar}
         setSmallSidebar={setSmallSidebar}
       />
-      <div className="w-[300px] flex-wrap overflow-hidden px-2 hidden sm:inline-flex">
+      <div className="w-[300px] flex-wrap overflow-hidden px-2 hidden md:inline-flex">
         {/* TODO: fileSideBar */}
         {smalSidebar == "file" && <FileSidebar />}
         {/* TODO: Search Sidebar */}

@@ -13,7 +13,7 @@ import ReplyAllIcon from "@mui/icons-material/ReplyAll";
 
 function SmallSideBar({ smalSidebarValue, setSmallSidebar }) {
   return (
-    <div className="flex flex-col justify-between">
+    <div className="flex flex-col justify-between bg-[#24292E]">
       {/* TODO: small sidebar Top */}
       <div className="space-y-6">
         {/* TODO: file  */}

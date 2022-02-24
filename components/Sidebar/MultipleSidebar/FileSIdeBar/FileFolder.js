@@ -15,6 +15,26 @@ import InsertDriveFileIcon from "@mui/icons-material/InsertDriveFile";
 import FmdBadIcon from "@mui/icons-material/FmdBad";
 import File from "./File";
 
+export const Home = () => {
+  return <h1>I am the home commponents</h1>;
+};
+
+export const About = () => {
+  return <h1>I am the About commponents</h1>;
+};
+
+export const Contact = () => {
+  return <h1>I am the Contact commponents</h1>;
+};
+
+export const Project = () => {
+  return <h1>I am the Project commponents</h1>;
+};
+
+export const Github = () => {
+  return <h1>I am the Github commponents</h1>;
+};
+
 function FileFolder() {
   const componentsDropdown = [
     {
@@ -80,6 +100,44 @@ function FileFolder() {
     },
   ];
 
+  const pageFile = [
+    {
+      id: 1,
+      name: "home.js",
+      route: "home",
+      component: "Home",
+      Icon: "https://i.ibb.co/zWdF8fP/1024px-Unofficial-Java-Script-logo-2-svg.png",
+    },
+    {
+      id: 2,
+      name: "about.js",
+      route: "about",
+      component: "About",
+      Icon: "https://i.ibb.co/zWdF8fP/1024px-Unofficial-Java-Script-logo-2-svg.png",
+    },
+    {
+      id: 3,
+      name: "contact.js",
+      route: "contact",
+      component: "Contact",
+      Icon: "https://i.ibb.co/zWdF8fP/1024px-Unofficial-Java-Script-logo-2-svg.png",
+    },
+    {
+      id: 4,
+      name: "project.js",
+      route: "project",
+      component: "Project",
+      Icon: "https://i.ibb.co/zWdF8fP/1024px-Unofficial-Java-Script-logo-2-svg.png",
+    },
+    {
+      id: 5,
+      name: "github.js",
+      route: "github",
+      component: "Github",
+      Icon: "https://i.ibb.co/zWdF8fP/1024px-Unofficial-Java-Script-logo-2-svg.png",
+    },
+  ];
+
   return (
     <div className="pl-3 space-y-1">
       <Folder Icon={FolderIcon} text="next" bg="text-green-300" />
@@ -90,7 +148,13 @@ function FileFolder() {
         dropdown={componentsDropdown}
       />
       <Folder Icon={FolderZipIcon} text="node_modules" bg="text-green-600" />
-      <Folder Icon={FolderSpecialIcon} text="pages" bg="text-red-400" />
+      <Folder
+        Icon={FolderSpecialIcon}
+        text="pages"
+        bg="text-red-400"
+        dropdown={pageFile}
+        page
+      />
       <Folder Icon={FolderSharedIcon} text="public" bg="text-blue-400" />
       <Folder Icon={FolderDeleteIcon} text="styles" bg="text-red-300" />
       {/* FIXME: All the filex */}

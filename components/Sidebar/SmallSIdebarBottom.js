@@ -37,6 +37,12 @@ function SmallSIdebarBottom() {
               <li className="list-none cursor-context-menu flex items-center justify-between px-3 py-2  hover:bg-gray-700 transition-all ease-in-out">
                 <p>Settings Sync is On</p>
               </li>
+              <li
+                onClick={signOut}
+                className="list-none cursor-context-menu flex items-center justify-between px-3 py-2  hover:bg-gray-700 transition-all ease-in-out"
+              >
+                <p>Logout</p>
+              </li>
             </div>
           </>
         )}

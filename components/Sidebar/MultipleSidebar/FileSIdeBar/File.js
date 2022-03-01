@@ -24,6 +24,7 @@ function File({ Icon, text, iconColor, image, page, allFuilds }) {
           width={15}
           height={15}
           className="object-contain rounded"
+          alt="hellow"
         />
       )}
       <p className="text-yellow-100 group-hover:text-blue-400 transition-colors ease-in-out pl-1">

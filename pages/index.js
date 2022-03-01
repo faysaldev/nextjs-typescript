@@ -6,12 +6,10 @@ import SideBar from "../components/Sidebar/SideBar";
 import TopNav from "../components/TopNav/TopNav";
 
 function index() {
-  const [loadings, setLoading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 2500);
-  }, []);
+  const [loadings, SetLoading] = useState(true);
+  setTimeout(() => {
+    SetLoading(false);
+  }, 3000);
 
   return (
     <div className="bg-[#252526] min-h-screen h-full text-white relative">

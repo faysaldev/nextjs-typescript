@@ -73,8 +73,8 @@ function Project() {
         {/* All the Project Taht I have */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 h-[85vh] gap-x-0 gap-y-3 sm:gap-y-0 sm:gap-x-12 scrollFbarHIde overflow-y-scroll pt-4">
           {project?.map((project) => (
-            <Fade delay={70}>
-              <SingleProject key={project.id} project={project} />
+            <Fade key={project.id} delay={70}>
+              <SingleProject project={project} />
             </Fade>
           ))}
         </div>

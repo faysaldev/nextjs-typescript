@@ -5,7 +5,7 @@ import Preloader from "../components/Preloader";
 import SideBar from "../components/Sidebar/SideBar";
 import TopNav from "../components/TopNav/TopNav";
 
-function index() {
+function Index() {
   const [loadings, SetLoading] = useState(true);
   setTimeout(() => {
     SetLoading(false);
@@ -30,4 +30,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;

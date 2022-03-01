@@ -13,6 +13,7 @@ function SingleProject({ project }) {
           width={500}
           height={300}
           className="object-contain"
+          alt="hellow"
         />
         {/* Image content */}
         <div className="projectCart hidden group-hover:block opacity-0 group-hover:opacity-95 transition-all ease-in-out duration-1000">
@@ -21,10 +22,10 @@ function SingleProject({ project }) {
           {/* content */}
           <div className="flex items-center justify-center flex-col h-full">
             <div className="flex items-center space-x-3 pb-2 text-pink-500 font-bold">
-              <a href={project.github} target="_blank">
+              <a href={project.github}>
                 <GitHubIcon />
               </a>
-              <a href={project.live} target="_blank">
+              <a href={project.live}>
                 <LinkIcon />
               </a>
             </div>

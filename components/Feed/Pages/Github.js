@@ -22,7 +22,6 @@ function Github() {
                 sure Follow Me on github.{" "}
                 <a
                   className="underline text-[#857ee2]"
-                  target="_blank"
                   href="https://github.com/faysaldev"
                 >
                   faysaldev

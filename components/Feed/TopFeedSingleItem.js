@@ -36,7 +36,7 @@ function TopFeedSingleItem({ item }) {
       }`}
     >
       <div onClick={selectCurrentTab} className="flex items-center space-x-2">
-        <Image src={item.Icon} width={15} height={15} />
+        <Image src={item.Icon} width={15} height={15} alt="hello" />
 
         <p>{item.name}</p>
       </div>

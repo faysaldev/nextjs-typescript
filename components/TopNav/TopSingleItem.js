@@ -6,7 +6,13 @@ function TopSingleItem({ name, image, dropdown }) {
   return (
     <>
       {image && (
-        <Image src={image} height={25} width={25} className="object-contain" />
+        <Image
+          src={image}
+          height={25}
+          width={25}
+          className="object-contain"
+          alt="hellow"
+        />
       )}
       {name && (
         <div className={`relative text-sm group hidden md:inline-flex`}>

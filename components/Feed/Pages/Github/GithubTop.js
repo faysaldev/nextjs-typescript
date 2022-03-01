@@ -12,6 +12,7 @@ function GithubTop() {
             width={70}
             height={50}
             className="object-contain"
+            alt="true"
           />
           <p>faysaldev</p>
         </div>

@@ -8,6 +8,7 @@ function HomeRightContent() {
         width={400}
         height={600}
         className="object-contain"
+        alt="hello"
       />
     </div>
   );

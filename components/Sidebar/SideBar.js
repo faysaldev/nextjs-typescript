@@ -14,8 +14,6 @@ import LiveShereSidebar from "./MultipleSidebar/LiveShereSidebar";
 function SideBar() {
   const [smalSidebar, setSmallSidebar] = useState("file");
 
-  console.log(smalSidebar);
-
   return (
     <div className="flex max-w-[230px] h-[94vh]">
       <SmallSideBar

@@ -10,7 +10,6 @@ import { useSelector } from "react-redux";
 
 function Feed() {
   const currentTab = useSelector(setlectCurrentFile);
-  console.log(currentTab);
 
   return (
     <div className="bg-[#24292E] w-full min-h-[85vh]">

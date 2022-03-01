@@ -1,8 +1,22 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  page: [],
-  currentFile: null,
+  page: [
+    {
+      id: 1,
+      name: "home.js",
+      route: "home",
+      component: "Home",
+      Icon: "https://i.ibb.co/zWdF8fP/1024px-Unofficial-Java-Script-logo-2-svg.png",
+    },
+  ],
+  currentFile: {
+    id: 1,
+    name: "home.js",
+    route: "home",
+    component: "Home",
+    Icon: "https://i.ibb.co/zWdF8fP/1024px-Unofficial-Java-Script-logo-2-svg.png",
+  },
 };
 
 export const appSlice = createSlice({

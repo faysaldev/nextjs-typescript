@@ -17,7 +17,6 @@ function Login({ providers }) {
       >
         <div className="flex space-y-3 flex-col">
           {Object.values(providers).map((provider) => {
-            console.log(provider);
             return (
               <>
                 <button

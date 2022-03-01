@@ -15,26 +15,6 @@ import InsertDriveFileIcon from "@mui/icons-material/InsertDriveFile";
 import FmdBadIcon from "@mui/icons-material/FmdBad";
 import File from "./File";
 
-export const Home = () => {
-  return <h1>I am the home commponents</h1>;
-};
-
-export const About = () => {
-  return <h1>I am the About commponents</h1>;
-};
-
-export const Contact = () => {
-  return <h1>I am the Contact commponents</h1>;
-};
-
-export const Project = () => {
-  return <h1>I am the Project commponents</h1>;
-};
-
-export const Github = () => {
-  return <h1>I am the Github commponents</h1>;
-};
-
 function FileFolder() {
   const componentsDropdown = [
     {

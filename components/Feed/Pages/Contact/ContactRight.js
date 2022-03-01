@@ -11,13 +11,6 @@ function ContactRight() {
     if (name === "" || email === "" || subject === "" || message === "") {
       alert("Fill up the all value");
     } else {
-      console.log({
-        name,
-        email,
-        subject,
-        message,
-      });
-
       setName("");
       setEmail("");
       setSubject("");

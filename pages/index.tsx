@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 function Index() {
   return (
     <div>
-      <h1>Hellow</h1>
+      <h1>Hello</h1>
     </div>
   );
 }
